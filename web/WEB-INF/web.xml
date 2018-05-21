@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>buscarUsuario</servlet-name>
+        <servlet-class>servlets.buscarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registrarUsuario</servlet-name>
+        <servlet-class>registrarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>agregarUsuario</servlet-name>
+        <servlet-class>servlets.agregarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>estadoUsuario</servlet-name>
+        <servlet-class>servlets.estadoUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>buscarUsuario</servlet-name>
+        <url-pattern>/buscarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registrarUsuario</servlet-name>
+        <url-pattern>/registrarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>agregarUsuario</servlet-name>
+        <url-pattern>/agregarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>estadoUsuario</servlet-name>
+        <url-pattern>/estadoUsuario</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>Login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
